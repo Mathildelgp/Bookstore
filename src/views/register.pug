@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h1 REGISTER
+	p veuillez vous enregister : 
+	form(method='post', action='/user/register')
+		.form-group
+			label Name
+			input.form-control(name='name', type='text', placeholder='enter your name')
+		.form-group
+			label Username
+			input.form-control(name='username', type='text', placeholder='enter your username')
+		.form-group
+			label Email
+			input.form-control(name='email', type='text', placeholder='enter your email')
+		.form-group
+			label Password
+			input.form-control(name='password', type='password', placeholder='enter your password')
+		.form-group
+			label Confirm Password
+			input.form-control(name='password2', type='password', placeholder='confirm your password')
+		input.btn.btn-primary(type='submit', value='register')

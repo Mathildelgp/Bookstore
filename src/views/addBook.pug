@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+	h1 Add book
+	p Please add book
+	form(method='post', action='/books/add_book' enctype="multipart/form-data")
+		.form-group
+			label Title
+			input.form-control(name='name', type='text', placeholder='enter your title')
+		.form-group
+			label Price
+			input.form-control(name='price', type='text', placeholder='enter your price')
+		.form-group
+			label Couverture
+			input.form-control(name='img', type='file')
+		input.btn.btn-primary(type='submit', value='connection')

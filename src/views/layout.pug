@@ -1,0 +1,39 @@
+doctype html
+head
+	link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous")
+	link(href="/css/style.css", rel='stylesheet')
+	title BOOKSTORE
+body
+	div#header
+		h1 BOOKSTORE
+		div#log
+			div#membre
+				form(method='post', action='/user/login')
+					.form-group
+						label
+							i.far.fa-envelope
+						input.form-control(name='email', type='text', placeholder='email')
+						label
+							i.fas.fa-unlock-alt
+						input.form-control(name='password', type='text', placeholder='password')
+						input.btn.btn-primary(type='submit', value='connection')
+			a(href="/user/register") 
+				p Inscrivez-vous !
+	div#menu
+		ul
+			a(href='/')
+				li home
+			a(href='/about')
+				li about
+			a(href='/books')
+				li book
+			a(href='/user/register')
+				li register
+			a(href='/user/login')
+				li login
+	if user
+		document.getelementbyId('membre').remove()
+		document.getelementbyId('log').innerHTML = 'Bonjour ' + user.username
+
+	block content
+

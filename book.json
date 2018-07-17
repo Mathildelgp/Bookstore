@@ -1,0 +1,17 @@
+{
+   "1":{
+      "name":"Harry Potter à l'école des sorciers",
+      "prix":15,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfFaCjcZOpIcel1BR6pQYI7QA_aBXsLuARONfYraBLgVhWDWtOog"
+   },
+   "2":{
+      "name":"Harry Potter et la chambre des secrets",
+      "prix":15,
+      "img":"https://images-na.ssl-images-amazon.com/images/I/51oUKyOf8xL._SX346_BO1,204,203,200_.jpg"
+   },
+   "3":{
+      "name":"Harry Potter et le prisonnier d'Azkaban",
+      "prix":15,
+      "img":"http://cdn.franceloisirs.com/33186-293495-thickbox/harry-potter-tome-3-harry-potter-et-le-prisonnier-d-azkaban.jpg "
+   }
+}

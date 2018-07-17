@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	div#books
+		each book in books
+			a(href='/books/' + book.id)
+				img(src="../uploads/" + book.img)
+				p= book.name
+				p= book.price

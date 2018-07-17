@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+	h1 Login
+	p Please you can log yourself
+	form(method='post', action='/user/login')
+		.form-group
+			label Email
+			input.form-control(name='email', type='text', placeholder='enter your email')
+		.form-group
+			label Password
+			input.form-control(name='password', type='password', placeholder='enter your password')
+		input.btn.btn-primary(type='submit', value='connection')
